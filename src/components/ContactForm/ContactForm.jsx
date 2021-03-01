@@ -30,29 +30,29 @@ class ContactForm extends Component {
     render() {
         const { name, number } = this.state; 
         return (
-            <form onSubmit={this.handleSubmit} className="contactForm">
-                <label htmlFor="name">
+            <form onSubmit={this.handleSubmit} className={styles.contactForm}>
+                <label htmlFor="name" className={styles.label}>
                     Name
                 <input name="name"
                     type="text"
-                    className="contactInput"
+                     className={styles.contactInput}
                     placeholder="insert name"
                     onChange={this.handleChange}
                     value={name}
                 />
                 </label>  
-                <label htmlFor="number">
+                <label htmlFor="number" className={styles.label}>
                     Number
              <input name="number"
                 type="text"
-                className="contactInput"
+                className={styles.contactInput}
                 placeholder="insert number"
                 onChange={this.handleChange}
                 value={number}
                 />
                 </label>
           
-         <button type="submit" className="btn">
+         <button type="submit" className={styles.btn}>
                     Add contact
         </button>
             </form>

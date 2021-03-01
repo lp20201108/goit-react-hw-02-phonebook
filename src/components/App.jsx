@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { uuid } from "uuidv4";
-import ContactForm from './components/ContactForm';
-import ContactsList from "./components/ContactsList";
-import Filter from "./components/Filter/Filter";
+import ContactForm from './ContactForm';
+import ContactsList from "./ContactsList";
+import Filter from "./Filter/Filter";
+import  styles from './App.module.css';
 // import "node_modules/modern-normalize/modern-normalize.css";
 // import PropTypes from "prop-types";
 
@@ -79,7 +80,7 @@ export default class App extends Component {
   
     return (
       <>
-      <div className="container" >
+      <div className={styles.container} >
           <h1 className="titlePhonebook">Phonebook</h1>
        <ContactForm addContact={ this.addContact}/>
       <h2 className="title">Contacts</h2>

@@ -1,12 +1,12 @@
 import React from 'react'
 import { uuid } from "uuidv4";
 import ContactListItem from '../ContactListItem/ContactListItem';
-
+import styles from './ContactsList.module.css';
 
 const ContactsList = ({ visibleContacts, handleRemove }) => {
     
     if (!visibleContacts.length) {
-        return <p>Phonebook is empty</p>
+        return <p className={styles.message}>Phonebook is empty!</p>
     }
     return (
        <ul className="contactsList">

@@ -12,23 +12,41 @@ body {
  background-color: aliceblue;
 }
 
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.container{
-  width: 800px;
-  margin-left: 50px;
-  padding: 20px;
-
-}
-
-#root {
-  padding: 0 100px;
-  display: flex;
-  justify-content: space-between;
-}
 
 
 .contactForm{
@@ -36,13 +54,15 @@ code {
 }
 
 .title{
- margin-left: 20px;
  padding: 10px;
+ color: white;
+  background-color: rgb(48,80,98);
 }
 
 .titlePhonebook{
-  composes:title;
-  background-color: aqua;
+  color: white;
+  background-color: rgb(48,80,98);
+  text-align: center;
 }
 
 .inputFilter{
@@ -57,13 +77,12 @@ code {
 }
 
 
-.contactListItem {
-  margin-right: 10px;
-  display: flex;
-  justify-content: space-around;
-  
-}
+
 
 .contactsList{
   padding: 0;
+  margin-bottom: 20px;
+}
+.contactForm{
+  display: flex;
 }
