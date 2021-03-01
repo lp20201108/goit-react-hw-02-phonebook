@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ background-color: aliceblue;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  width: 800px;
+  margin-left: 50px;
+  padding: 20px;
+
+}
+
+#root {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.contactForm{
+  display: flex;
+}
+
+.title{
+ margin-left: 20px;
+ padding: 10px;
+}
+
+.titlePhonebook{
+  composes:title;
+  background-color: aqua;
+}
+
+.inputFilter{
+  background-image: url('https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+
+.contactListItem {
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.contactsList{
+  padding: 0;
 }

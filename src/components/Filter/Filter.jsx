@@ -5,8 +5,10 @@ const Filter = ({filter, handleChange}) => {
    
     return (
     <label >
-     Find contacts by name
-         <input name="filter"
+            Find contacts by name
+            <input
+                className="inputFilter"
+                name="filter"
           type="text"
           className="contactInput"
           placeholder="search contact"
