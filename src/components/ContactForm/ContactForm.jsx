@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import styles from './ContactForm.module.css'; 
 
 
@@ -23,9 +22,6 @@ class ContactForm extends Component {
         addContact(name,number);
         this.setState({name: '', number:''})
     }
-
-
-
 
     render() {
         const { name, number } = this.state; 
