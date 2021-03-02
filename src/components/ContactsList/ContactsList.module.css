@@ -8,5 +8,6 @@
     font-weight: 500;
     font-size: 20px;
     color: rgb(201,69,40);
+    pointer-events: none;
     
 }
